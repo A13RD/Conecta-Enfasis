@@ -5,15 +5,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, Any
 
 from src.controller.auth_controller import AuthController, LoginRequest
-
-from src.controller.auth_controller import AuthController
 from src.controller.estudiante_controller import EstudianteController
 from src.controller.coordinador_controller import CoordinadorController, CursoCreate
 from src.controller.chatbot_controller import ChatBotController
 
 
 auth_controller = AuthController()
-estudiante_controller = EstudianteController()
+estudiante_controller = EstudianteController()  
 coordinador_controller = CoordinadorController()
 chatbot_controller = ChatBotController()
 
